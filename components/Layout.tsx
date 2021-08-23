@@ -49,7 +49,7 @@ export default function Layout(props: LayoutProps) {
                     onClick={catchLyrics} 
                     />
                 <Lyrics dadosApi={dadosApi} erro={erro}/>
-                <p className='self-center mt-3 text-center'>@2021 - Desenvolvido por Yuri Paiva </p>
+                <p className='self-center my-3 text-center'>@2021 - Desenvolvido por Yuri Paiva </p>
             </div>
         </div>
     )
