@@ -1,19 +1,9 @@
-import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
+import useAppData from "../src/hook/useAppData";
 
 export default function Home() {
 
-  const [letra, setLetra] = useState('')
-
-  useEffect(() => {
-    async function retornaLetra() {
-      const dados = await fetch('https://api.vagalume.com.br/search.php?art=djavan&mus=oceano')
-      const convert = await dados.json()
-      const letraApi = convert.mus[0].text
-      setLetra(letraApi)
-    }
-    retornaLetra()
-  }, [])
+  const {musica, artista, letra} = useAppData()
 
   return (
     <div className={`
