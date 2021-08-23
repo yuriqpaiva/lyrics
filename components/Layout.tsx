@@ -5,12 +5,17 @@ import Lyrics from "./Lyrics";
 
 interface LayoutProps {
     title: string
-    letra: string
 }
 
 export default function Layout(props: LayoutProps) {
 
-    const { artista, musica, setArtista, setMusica } = useAppData()
+    const { artista,
+        musica,
+        dadosApi,
+        setArtista,
+        setMusica,
+        erro,
+        catchLyrics } = useAppData()
 
     return (
         <div className={`
@@ -34,8 +39,11 @@ export default function Layout(props: LayoutProps) {
                     value={musica}
                     onChange={setMusica}
                 />
-                <Button value='Procurar' />
-                <Lyrics letra={props.letra} />
+                <Button
+                    value='Procurar'
+                    onClick={catchLyrics} 
+                    />
+                <Lyrics dadosApi={dadosApi} erro={erro}/>
             </div>
         </div>
     )
