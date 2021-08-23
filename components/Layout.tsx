@@ -1,8 +1,10 @@
-import { songIcon } from "../public/icons/icons";
+/* eslint-disable @next/next/no-img-element */
+import { songIcon } from "./icons";
 import useAppData from "../src/hook/useAppData";
 import Button from "./Button";
 import Input from "./Input";
 import Lyrics from "./Lyrics";
+import Image from 'next/image'
 
 interface LayoutProps {
     title: string
