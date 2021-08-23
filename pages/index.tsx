@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <div className={`
       flex justify-center min-h-screen max-h-full
-      bg-blue-200
+      bg-blue-300
     `} onKeyUp={(e) => {
         if (e.code === 'Enter') {
           catchLyrics()
         }
       }}>
-      <Layout title='Buscar Letras' />
+      <Layout title='Procurar Letras' />
     </div>
   )
 }

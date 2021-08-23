@@ -20,11 +20,12 @@ export default function Layout(props: LayoutProps) {
     return (
         <div className={`
             flex flex-col items-center 
-           bg-white p-5 rounded-md shadow-lg w-11/12 my-3
+           bg-white p-5 rounded-md shadow-lg w-11/12 my-3 
 
         `}>
-            <h1 className='text-center mb-5 text-4xl'>{props.title}</h1>
-            <div className={`flex flex-col lg:w-4/12 md:w-2/4`}>
+            <h1 className='text-center mb-10 text-4xl font-semibold'>{props.title}</h1>
+            
+            <div className={`flex flex-col lg:w-4/12 md:w-2/4 w-72`}>
                 <Input
                     title='Artista: '
                     type='text'
@@ -44,6 +45,7 @@ export default function Layout(props: LayoutProps) {
                     onClick={catchLyrics} 
                     />
                 <Lyrics dadosApi={dadosApi} erro={erro}/>
+                <p className='self-center mt-3 text-center'>@2021 - Desenvolvido por Yuri Paiva </p>
             </div>
         </div>
     )

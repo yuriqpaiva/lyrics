@@ -8,7 +8,7 @@ export default function Button(props: ButtonProps) {
         <>
             <button className={`
                 self-start bg-blue-500 p-2 rounded-md
-                text-white shadow-sm mb-10 
+                text-white shadow-sm 
                 hover:shadow-lg
             `}
                 onClick={props.onClick}
