@@ -16,7 +16,7 @@ export default function Input(props: InputProps) {
                 className={`
                     border-2 rounded-sm border-gray-400
                     focus:border-blue-500
-                    outline-none shadow-sm mb-3 p-1
+                    outline-none mb-3 p-1
                 `}
                 value={props.value}
                 onChange={(e) => props.onChange(e.target.value)}
