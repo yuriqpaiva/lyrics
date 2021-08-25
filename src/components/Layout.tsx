@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { songIcon } from "./icons";
-import useAppData from "../src/hook/useAppData";
+import useAppData from "../hook/useAppData";
 import Button from "./Button";
 import Input from "./Input";
 import Lyrics from "./Lyrics";

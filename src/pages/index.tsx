@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import useAppData from "../src/hook/useAppData";
+import useAppData from "../hook/useAppData";
 import Head from 'next/head'
 
 export default function Home() {
