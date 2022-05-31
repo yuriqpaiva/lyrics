@@ -1,21 +1,58 @@
-# Lyrics
+# Lyrics &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-green.svg) ![language](https://img.shields.io/badge/language-typescript-blue) ![storage](https://img.shields.io/badge/framework-nextjs-black) ![style](https://img.shields.io/badge/style-tailwindcss-ff69b4)
 
-App que pesquisa letras de música - Front-End feito em React - NextJS utilizando Typescript e TailWindCSS.
+<div align="center">
+  <img align="center" src="./public/app.png" />
+</div>
 
-# Como funciona?
+<br/>
 
-Para instalar as dependências do Node utilize o comando no terminal da pasta:
+## 💡 Introduction
+
+Web application song lyrics search
+
+- Search for a song by typing Artist and Song Name
+- Show full lyrics of the song searched
+
+<br/>
+
+## 🖥 Pre-requisites:
+
+- NodeJS
+
+<br/>
+
+## 💾 How to Install Dependencies?
+
+### Using NPM:
+
 ```
-npm i
+  npm install
 ```
 
-Para rodar a aplicação React localmente, em modo de desenvolvimento, utilize o seguinte comando no terminal da pasta:
+### Using Yarn:
+
 ```
-npm run dev
+  yarn
 ```
 
-# Explicando o projeto
+<br/>
 
-Este projeto tem a intenção de fornecer ao usuário uma busca por letras de música através da API do Vagalume.
+## 🚀 How to Run it?
 
-![Imagem-aplicacao1](./public/images/img-app1.png)
+### Using NPM:
+
+```
+  npm run dev
+```
+
+### Using Yarn:
+
+```
+  yarn dev
+```
+
+<br/>
+
+## © License
+
+MIT License © Yuri Paiva
